@@ -1,0 +1,746 @@
+/* Reset */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+::selection {
+        color: white;
+        background: gold;
+    }
+}
+
+.cointainer {
+    width: 85%;
+    margin-inline: auto;
+    ;
+}
+
+.img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    
+}
+
+.nav .cointainer {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border: 4px black solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.nav-text {
+    font-size: 40px;
+    align-content: center;
+    justify-content: start;
+    font-weight: bold;
+}
+
+a span.text {
+    color: orange;
+    font-size: 40px;
+    align-content: center;
+}
+
+.nav-link ul {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.nav-link ul a {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.nav-link ul li img {
+    width: 10px;
+    background-color: rgb(80, 80, 80);
+}
+
+.SUBSCRIBE {
+    display: flex;
+    justify-content: end;
+}
+
+.SUBSCRIBE a {
+    font-size: 18px;
+    background-color: rgb(223, 209, 19);
+    border: 5px black solid;
+    align-content: center;
+    border-radius: 20px;
+    padding: 15px;
+      
+}
+
+
+/* ===== Hero Section ===== */
+.hero {
+    padding: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: oklch(94.5% .129 101.54);
+   position: relative;
+   top:0;
+   left: 0;
+   right: 0;
+z-index: 1;
+  border: black 3px solid;
+  
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-section {
+    max-width: 45%;
+}
+
+.tag {
+    background: black;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-shadow: 20px 10px 10px black;
+}
+.tag:hover {
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+h1 {
+    line-height: 1.1;
+    font-weight: 900;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+h1 .black { color: black; }
+h1 .red { color: #e60c0c; }
+h1 .blue { color: #0066ff; }
+
+.desc {
+    border: 2px solid black;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+.buttons {
+    display: flex;
+
+    gap: 20px;
+    
+            color: white;
+            font-weight: 600;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 20px;
+            transition: background-color 1s;
+   
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    transition: position top right 1s 1s 1s;
+    box-shadow: 20px 10px 10px black;
+}
+.nav ul a:hover{
+    color: rgb(160, 137, 9);
+}
+.btn:hover{
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+.black-btn {
+    background: black;
+    color: white;
+}
+.black-btn:hover {
+    background:oklch(94.5% .129 101.54);
+}
+.white-btn {
+    background: white;
+    color: black;
+}
+.white-btn:hover {
+    background:oklch(94.5% .129 101.54);
+}
+.image-section:hover{
+    transform: scale(1.1);
+}
+
+/* ===== Image Section ===== */
+.image-section {
+    position: relative;
+    transform: rotate(2deg);
+}
+
+.image-section img {
+    width: 420px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px black;
+    border-radius: 5px;
+}
+
+.featured {
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid black;
+    transform: rotate(5deg);
+}
+.sec-3{
+    background-color: oklch(87.9% .169 91.605);
+    border: 3px black solid;
+    margin-bottom: 10px;
+}
+.head-sec-3{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+
+.out-3{
+    text-align: center;
+  display: flex;
+    justify-content: center;
+width: 100%;
+   padding: 40px;
+   
+  
+  
+}
+.in-3{
+    padding: 30px;
+    width: 30%;
+    border: 7px black solid;
+    margin: 10px;
+    transition: transform 1s;
+    
+}
+.in-3.av1:hover .name {
+    color: red;
+
+}
+.in-3.av3:hover .name {
+    color: oklch(52.216% 0.26633 308.472);
+
+}
+.in-3.av2:hover .name{
+    color: #0066ff;
+    
+}
+.in-3:hover {
+transform: scale(1.1);
+}
+.in-3-img img{
+    width: 34%;
+    border: black 4px solid;
+
+}
+.name{
+    padding: 10px;
+    font-weight: 700;
+    font-size: 40px;
+}
+.name2{
+    padding: 10px;
+    font-size: 25px;
+}
+.name3{
+    padding: 20px;
+    margin: 5px;
+    font-size: 18px;
+}
+.icon img{
+    width: 15%;
+    padding: 10px;
+    margin: 2px;
+    background-color: black;
+    transition: transform ackground-color 0.3s 0.3s;
+    }
+
+.icon img:hover {
+    transform: scale(1.2);
+    background-color: blue;
+}
+.av1{
+    background-color: oklch(97.3% .071 103.193);
+}
+.av2{
+    background-color: oklch(96.2% .044 156.743);
+}
+.av3{
+    background-color: oklch(94.8% .028 342.258);
+}
+
+.border{
+    border: 5px black solid;
+    width: 300px;
+    text-align: center;
+    justify-self: center;
+}
+
+  
+  .img-become{
+    padding: 20px;
+    text-align: left;
+
+  }
+
+  .img-become span{
+    margin: 10px;
+    padding: 10px;
+    
+  }
+   .part-2 span{
+     font-size: 21px;
+     font-weight: bolder;
+     position: relative;
+     bottom: 10px;
+
+   }
+  .part-2{
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+.img-become img {
+    width: 7%;
+    margin: 1px;
+    padding: 5px;
+    
+
+}
+.img-become img.icon1{
+    background-color: red;
+    
+}
+.img-become img.icon2 {
+    background-color: blue;
+
+}
+.img-become img.icon3 {
+    background-color: purple;
+
+}
+.img-become img.icon4{
+    background-color: green;
+
+}
+.in4{
+    display: flex;
+}
+.BECOME-PART{
+   
+
+padding: 30px;
+margin: 10px;
+width: 50%;
+
+
+}
+
+.become-p{
+    font-size: 20px;
+    border-right: 7px black solid;
+    border-bottom: 5px black solid;
+    padding: 30px;
+    box-shadow: 10px 10px 10px black;
+    width: 90%;
+}
+
+.REBEL-SAYING{
+    width: 50%;
+   border: 6px black solid;
+    padding: 30px;
+}
+.person{
+    border: 3px black solid;
+    background-color: oklch(97.1% .013 17.38);
+    margin-bottom:20px ;
+}
+.person2{
+    background-color: rgba(0, 183, 255, 0.438);
+}
+.REBEL-SAYING .person p{
+    font-size: 30px;
+    padding: 20px;
+
+}
+.REBEL-SAYING .person img{
+    width: 9%;
+   position: relative;
+   right: 300px;
+   border: black 4px solid;
+   margin-top: 20px;
+}
+
+.person h2{
+    position: relative;
+        right: 210px;
+        bottom: 50px;
+
+     
+        font-size: 18px;
+
+}
+.person p.p{
+
+        position: relative;
+            right: 170px;
+            bottom:65px;
+
+            
+
+            
+            font-size: 15px;
+}
+.button2{
+   
+    position: relative;
+    top: 100px;
+   
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Header */
+.head-sec2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.head-sec2 h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.fresh-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: rotate(-2deg);
+   
+}
+
+/* Layout */
+.articles-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Articles */
+.articles-list {
+    flex: 2;
+}
+
+.out-2 {
+    border: 3px solid black;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.out-2:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 0px #000;
+}
+
+.in-2 {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.img-sec2 img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.article-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.article-content p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.small-icon span {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.small-icon span img {
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+}
+
+
+.trending,
+.categories {
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+.trending h2,
+.categories h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.trending ul,
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.trending li span {
+    font-weight: bold;
+    margin-right: 10px;
+    color: red;
+}
+
+.categories li {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.categories .tech {
+    background: #fff6a3;
+}
+
+.categories .design {
+    background: #c8f8c4;
+}
+
+.categories .culture {
+    background: #fcd8e3;
+}
+
+.categories .opinion {
+    background: #d3e4ff;
+}
+
+.categories .tutorials {
+    background: #ead7ff;
+}
+
+.categories li:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.3s;
+}   
+
+
+
+.last-sec .cointainer{
+
+    display: flex;
+}
+
+.last-sec{
+    color: white;
+    background-color: black;
+    padding: 30px;
+    
+    
+}
+.last-1{width: 33.3333%;}
+.logo img{
+    background-color: white;
+    width: 9%;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+   
+}
+
+span span{
+    font-size: 30px;
+
+}
+span.logo{
+    margin-bottom: 10px;
+}
+.last-1 p{
+    margin: 30PX;
+    font-size: 30px;
+}
+.CATEGORIES{
+    width: 33.3333%;
+
+}
+.CATEGORIES li a{
+        list-style: none;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        padding: 10px;
+
+}
+.CATEGORIES li{
+            list-style: none;
+            margin-bottom: 20px;
+                
+}
+.CATEGORIES h2{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    position: relative;
+    right: 5px;
+}
+.NEWSLETTER
+{
+    width: 33.3333%;
+
+}
+.NEWSLETTER h2{
+    margin-top: 30px;
+    position: relative;
+    top: 15px;
+}
+.NEWSLETTER p
+{
+font-size: 25px;
+margin: 10px;
+padding: 10px;
+position: relative;
+top: 20px;
+right:15px;
+}
+.email input{
+    width:70%;
+    height: 60px;
+    color: white;
+    padding: 10px;
+    background: black;
+    margin: 50px;
+    position: relative;
+    right: 45px;
+}
+.email button
+{
+    width: 70%;
+     height: 60px;
+     background-color: gold;
+     color: black;
+     font-size: 25px;
+     font-weight: bolder;
+     padding: 20px;
+     position: relative;
+     bottom: 20px;
+     transition: transform 1s;
+
+
+}
+.email button:hover{
+    transform: scale(1.1);
+}
+
+.border-2
+{
+    /* margin: 20px; */
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 2px white solid;
+}
+footer{
+    text-align: center;
+    font-size: 23px;
+    margin-top: 10px;
+    padding: 10px;
+}

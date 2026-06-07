@@ -1,0 +1,172 @@
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .cointainer {
+        width: 85%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        text-align: left;
+    }
+
+    .SUBSCRIBE {
+        margin-top: 15px;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero .text-section {
+        width: 100%;
+    }
+
+    .hero .image-section img {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .sec-2 .out-2 {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .sec-2 .text-sec2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-2 .img-sec2 img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sec-2 .in-2 h3 {
+        font-size: 24px;
+        padding: 10px;
+        text-align: center;
+        position: static;
+    }
+
+    .sec-2 .in-2 p {
+        font-size: 18px;
+        width: 100%;
+        position: static;
+        padding: 10px 20px;
+    }
+
+    .small-icon {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    /* Authors Section */
+    .sec-3 .out-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .sec-3 .in-3 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 90%;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .nav-text a {
+        font-size: 22px;
+    }
+
+    .nav-link ul li a {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sec-2 .in-2 {
+        border-width: 2px;
+        padding: 10px;
+    }
+
+    .sec-3 h1,
+    .sec-3 h2 {
+        text-align: center;
+    }
+
+    .icon img {
+        width: 28px;
+        margin: 6px;
+    }
+}
